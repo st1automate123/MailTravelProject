@@ -1,0 +1,122 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23375860100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify Search",
+        "description": "",
+        "id": "search;verify-search",
+        "after": [
+          {
+            "result": {
+              "duration": 26600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 697910100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I in HomePage",
+            "match": {
+              "location": "HomePageStepDef.i_am_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11806064300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I search for text",
+            "match": {
+              "location": "HomePageStepDef.searchText()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7617478900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on more info",
+            "match": {
+              "location": "HomePageStepDef.i_click_on_more_info()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2498621000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "It should display days price and telephone number",
+            "match": {
+              "location": "HomePageStepDef.it_should_display_days_price_and_telephone_number()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on iteneary",
+            "match": {
+              "location": "HomePageStepDef.i_click_on_iteneary()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "It should display some info for all the days in itenary",
+            "match": {
+              "location": "HomePageStepDef.it_should_display_some_info_for_all_the_days_in_itenary()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@search1"
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "MailTravel.feature"
+  }
+]
