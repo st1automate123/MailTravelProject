@@ -1,5 +1,7 @@
 package com.stepDefinitions;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import com.runner.BaseClass;
@@ -17,6 +19,8 @@ public class Hooks extends BaseClass{
 		System.setProperty("webdriver.chrome.driver",driverPath );
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(BASE_URL);
 		Thread.sleep(3000);
 		driver.findElement(COOKIE).click();
@@ -31,3 +35,4 @@ public class Hooks extends BaseClass{
 	}
 	
 }
+

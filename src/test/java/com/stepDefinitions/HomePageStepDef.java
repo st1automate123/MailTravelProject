@@ -13,15 +13,10 @@ public class HomePageStepDef extends BaseClass{
 		homePage.verifyTitleInHomePage();
 	}
 
-	/*@When("^I search for \"([^\"]*)\"$")
-	public void i_search_for(String searchText) throws Throwable {
-	   homePage.enterTextInSearchBox(searchText);
-	}*/
-	
 	@When("^I search for text$")
 	public void searchText()
 	{
-		homePage.enterText();	
+		homePage.searchText();	
 	}
 
 	@When("^I click on more info$")
@@ -45,5 +40,5 @@ public class HomePageStepDef extends BaseClass{
 	
 	}
 
-
+	
 }

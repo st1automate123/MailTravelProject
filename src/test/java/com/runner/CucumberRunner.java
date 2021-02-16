@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "./src/test/resources/features",
 		glue = { "com.stepDefinitions"},
-		tags= {"@search1"},
+		tags= {"@travel2"},
 		plugin = { "html:target/cucumber-html-report", "json:target/cucumber.json" }
 			)
 
@@ -18,3 +18,4 @@ public class CucumberRunner {
 	
 	
 }
+

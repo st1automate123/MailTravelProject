@@ -28,7 +28,7 @@ public class HomePage extends BaseClass{
 	
 	}
 	
-	public void enterText()
+	public void searchText()
 	{
 		action1.sendText(SERACHBOX, "india");
 		action1.clickOnElement(SERACHICON);
@@ -63,5 +63,6 @@ public class HomePage extends BaseClass{
 		System.out.println("priceText :"+priceText);
 
 	}
+	
 	
 }
